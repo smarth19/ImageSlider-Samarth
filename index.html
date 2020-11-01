@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Carousel</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- NavBar -->
+    <nav class="nav">
+        <div class="hamMenu"><i class="fas fa-bars"></i></div>
+        <div class="mainMenu">
+            <div class="navFirst">
+                <ul>
+                    <li><a class="navItems" href="#">About</a></li>
+                    <li class="dropDownOption"><a class="navItems" href="#">Dropdown <i
+                                class="fas fa-chevron-down"></i></a>
+                        <div class="dropDownMenu">
+                            <ul>
+                                <li><a class="dropDownItems"> Option 1 </a></li>
+                                <li><a class="dropDownItems"> Option 2 </a></li>
+                                <li><a class="dropDownItems"> Option 3 </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a class="navItems" href="#">Services</a></li>
+                    <li><a class="navItems" href="#">Contact Me</a></li>
+                </ul>
+            </div>
+            <!-- <div class="navSecond">
+            <img src="./img/logo.png" alt="Logo">
+        </div> -->
+            <div class="navThird">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-whatsapp"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Image Caraousel -->
+    <section class="caraouselSec">
+        <div class="carouselContainer">
+            <div class="carouselSlider">
+                <img src="https://source.unsplash.com/1600x900/?python" alt="carousel Image" id="1" class="imgCarousel">
+                <img src="https://source.unsplash.com/1600x900/?javascript" alt="carousel Image" id="2"
+                    class="imgCarousel">
+                <img src="https://source.unsplash.com/1600x900/?nodejs" alt="carousel Image" id="3" class="imgCarousel">
+                <img src="https://source.unsplash.com/1600x900/?ruby" alt="carousel Image" id="4" class="imgCarousel">
+                <img src="https://source.unsplash.com/1600x900/?html,css" alt="carousel Image" id="5"
+                    class="imgCarousel">
+            </div>
+            <button class="prevBtn" style="display:none" id="prevBtn"><i class="fas fa-arrow-left"></i></button>
+            <button class="nextBtn" id="nextBtn"><i class="fas fa-arrow-right"></i></button>
+            <div class="indicators">
+                <div class="indCont">
+                    <span class="indicator" style="background-color: white;" id="1"></span>
+                    <span class="indicator" id="2"></span>
+                    <span class="indicator" id="3"></span>
+                    <span class="indicator" id="4"></span>
+                    <span class="indicator" id="5"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+<script src="index.js"></script>
+
+</html>
